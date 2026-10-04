@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+</head>
+<body>
+    <h1>User Registration</h1>
+
+    <form>
+        <p>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required minlength="2">
+        </p>
+
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8">
+        </p>
+
+        <p>Account Type:</p>
+        <p>
+            <input type="radio" id="student" name="account_type" value="student" required>
+            <label for="student">Student</label>
+            <input type="radio" id="professional" name="account_type" value="professional">
+            <label for="professional">Professional</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <label for="agreement">I agree to the terms.</label>
+        </p>
+
+        <p>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Choose a country</option>
+                <option value="jordan">Jordan</option>
+                <option value="other">Other</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="message">About You:</label><br>
+            <textarea id="message" name="message" minlength="10" required></textarea>
+        </p>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
